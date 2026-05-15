@@ -2,8 +2,8 @@
 
 from __future__ import annotations
 from typing import Any
-from fastapi import APIRouter, Field
-from pydantic import BaseModel
+from fastapi import APIRouter
+from pydantic import BaseModel, Field
 
 from ..core.step2_intent_interpreter import langchain_plan
 from ..core.step3_metta_verifier import SymbolicVerifier
