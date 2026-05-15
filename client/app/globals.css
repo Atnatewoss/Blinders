@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 0%;
+  --foreground: 0 0% 100%;
+  --card: 0 0% 3%;
+  --card-foreground: 0 0% 100%;
+  --popover: 0 0% 3%;
+  --popover-foreground: 0 0% 100%;
+  --primary: 0 0% 100%;
+  --primary-foreground: 0 0% 0%;
+  --secondary: 0 0% 15%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 0 0% 10%;
+  --muted-foreground: 0 0% 63.9%;
+  --accent: 0 0% 100%;
+  --accent-foreground: 0 0% 0%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 0 0% 12%;
+  --input: 0 0% 12%;
+  --ring: 0 0% 89.4%;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  body {
+    background-color: #000;
+    color: #fff;
+    @apply antialiased selection:bg-white selection:text-black;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+.mono-card {
+  background: #050505;
+  border: 1px solid #1a1a1a;
+  transition: border-color 0.2s ease;
+}
+
+.mono-card:hover {
+  border-color: #333;
+}
+
+.subtle-grid {
+  background-image: radial-gradient(#1a1a1a 1px, transparent 1px);
+  background-size: 24px 24px;
+}
